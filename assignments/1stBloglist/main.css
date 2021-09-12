@@ -1,19 +1,42 @@
 .container {
     width: 800px;
     height: fit-content;
-    background-color: violet;
+    box-shadow: 5px 5px black;
 }
 
-.post {
+.blog-left {
     width: 80%;
     height: 200px;
-    background: yellow;
     float: left;
 }
 
-.preview {
+.profileImg {
+    width: 50px;
+    float: left;
+}
+
+.profile{
+    width: 100%;
+}
+
+
+.userID {
+    margin: 0px 70px 10px 70px;
+}
+
+.lastCheck {
+    margin: 0px 70px 0px 70px;
+
+}
+
+.blog-right {
     width: 20%;
     height: 200px;
-    background: yellowgreen;
-    float: left;
+    float: right;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
