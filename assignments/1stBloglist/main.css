@@ -1,0 +1,19 @@
+.container {
+    width: 800px;
+    height: fit-content;
+    background-color: violet;
+}
+
+.post {
+    width: 80%;
+    height: 200px;
+    background: yellow;
+    float: left;
+}
+
+.preview {
+    width: 20%;
+    height: 200px;
+    background: yellowgreen;
+    float: left;
+}
