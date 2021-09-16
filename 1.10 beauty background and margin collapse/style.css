@@ -1,0 +1,21 @@
+.main-background {
+    width: 100%;
+    height: 500px;
+    background: url(shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+
+    padding: 1px;
+    /* padding을 줌으로 margin-collpase현상 해결 */
+}
+
+.main-title{
+    color: white;
+    font-size: 40px;
+    /* margin-top: 200px; */
+    /* ㄴ margin collapse 현상 */
+    /* div와 h4둘다 박스이기때문에 윗 테두리가 겹치므로 margin시작 점이 동일하다 */
+    
+}
