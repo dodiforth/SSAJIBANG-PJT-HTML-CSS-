@@ -6,9 +6,10 @@
     background-repeat: no-repeat;
     background-position: center;
     filter: grayscale(100%);
-
-    padding: 1px;
+    text-align: center;
+    padding: 30px;
     /* padding을 줌으로 margin-collpase현상 해결 */
+    position: relative;
 }
 
 .main-title{
@@ -17,5 +18,40 @@
     /* margin-top: 200px; */
     /* ㄴ margin collapse 현상 */
     /* div와 h4둘다 박스이기때문에 윗 테두리가 겹치므로 margin시작 점이 동일하다 */
+    text-align: center;
+}
+
+.main-content {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+}
+
+.main-slogan {
+    padding: 30px;
+    background-color: wheat;
+    /* height: fit-content; */
+    width: 40%;
+    max-width: 70%;
+    position: relative;
+    top: -40px;
+    text-align: center;
+    /* left: 0;
+    right: 0; */
+    margin: auto;
+    box-sizing: border-box;
     
 }
