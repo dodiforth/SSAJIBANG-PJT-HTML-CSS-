@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+table {
+    border-collapse: collapse;
+    /* table은 기본적으로 틈이존재 */
+    /* 없애려면 border-collapse : collapse */
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+/* 셀 안의 요소 상하정렬 */
+/* vertical-align:top/middle/bottom */
+.cart-background {
+    background-color: darkcyan;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.cart-container {
+    background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 5px;
+    margin: 15px;
+}
