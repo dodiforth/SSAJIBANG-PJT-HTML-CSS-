@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body style="margin: 0px;">
+<body>
 
     <div class="main-background">
         <h4 class="main-title">ACHETEZ LES CHAUSSURES CHEZ NOUS !</h4>
@@ -29,18 +29,38 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ducimus maiores asperiores voluptate eligendi et rerum, distinctio necessitatibus voluptates corrupti earum, dolorem aspernatur quo iste odit. Exercitationem ducimus ratione iure? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laudantium nemo reprehenderit nam perferendis, ad suscipit sint minima? Enim officia omnis perferendis nostrum dicta ut doloremque minus laudantium voluptate consequatur.</p>
     </div>
 
-    <form action=""> <!--action에는 경로를 써준다-->
-        <input type="text" class="text-input">
-        <input type="password"></input>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="submit"> <!--submit기능 버튼만드는법 1/2-->
-        <button type="submit">전송</button><!--submit기능 버튼만드는법 2/2-->
-        <select name="" id="">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-        </select>
-    </form>
+    <div class="form-background">
+        <div class="form-white">
+            <form>
+                <div class="w-100">
+                <h3>Contact Us</h3>
+                <p>Your Email</p>
+                <input class="form-input" type="email" placeholder="user@email.com">
+                </div>
+                <div class="w-50">
+                    <p>First name</p>
+                    <input  class="form-input" type="text">
+                </div>
+                <div class="w-50">
+                    <p>Last name</p>
+                    <input  class="form-input" type="text">
+                </div>
+                <div class="clear"></div>
+                
+                <div class="w-100">
+                    <p>Message</p>
+                    <textarea class="form-input" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="sub">
+                    <label for="sub">Subscribe </label>
+                    <button class="send-btn" type="submit">SEND</button>
+                </div>
+            </form>
+            </form>
+        </div>
+    </div>
 
     
 </body>

@@ -1,3 +1,15 @@
+body {
+    margin: 0px;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
 .main-background {
     width: 100%;
     height: 500px;
@@ -51,20 +63,48 @@
     text-align: center;
     /* left: 0;
     right: 0; */
-    margin: auto;
-    box-sizing: border-box;
-    
+    margin: auto;    
 }
 
-.text-input {
-    padding: 10px;
-    font-size: 20px;
-    border: 2px solid black;
+.form-background {
+    background-color: rgb(51, 49, 49);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.form-white {
+    width: 80%;
+    max-width: 600px;    
+    background-color: whitesmoke;
+    padding: 30px;
+    margin: auto;
     border-radius: 5px;
 }
 
-/* input[속성명 = 속성값] */
-/* 이것도 일종의 CSS selector 문법 */
-input[type=password]{
-    background-color: brown;
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
+}
+
+.send-btn {
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    background-color: rgb(238, 183, 163);
+    border : none;
+    border-radius: 10px;
 }
