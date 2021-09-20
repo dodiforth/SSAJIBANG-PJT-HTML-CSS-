@@ -23,6 +23,25 @@ td, th {
     border-bottom: 1px solid #c2d3de;
 }
 
+button {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(235, 194, 14);
+
+    display: block;
+    margin-left: auto;
+    font-size: 25px;
+}
+
+a {
+    outline: none;
+    /* text-decoration: none; */
+    color: #1a70aa;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 /* 셀 안의 요소 상하정렬 */
 /* vertical-align:top/middle/bottom */
 
@@ -39,16 +58,25 @@ td, th {
     background-color: #c2d3de;
     padding: 20px;
     border-radius: 5px;
+    /* margin: auto; */
 }
 
 .cart-background h3 {
     color: #1a70aa;
     letter-spacing: 2px;
-    margin-left: 19%;
     font-size: 150%;
 }
 
+.cart-title {
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 30px;
+}
+
+
 .cart-container {
+    padding: 1px;
 
 }
 
@@ -85,6 +113,11 @@ td, th {
 }
 
 .cart-footer {
-    margin-top: 3%;
-    margin-left: 19%;
+    margin: auto;
+    margin-top: 20px;
+    /* margin-top: 3%;
+    margin-left: 19%; */
+    height: 200px;
+    width: 800px;
 }
+
