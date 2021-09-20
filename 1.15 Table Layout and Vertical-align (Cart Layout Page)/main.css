@@ -17,20 +17,74 @@ table {
 }
 
 td, th {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    /* #c2d3de */
+    padding: 30px;
+    border-bottom: 1px solid #c2d3de;
 }
 
 /* 셀 안의 요소 상하정렬 */
 /* vertical-align:top/middle/bottom */
+
+
+/* .cart-container {
+    /* background-color: whitesmoke; */
+    /* padding: 50px;
+    border-radius: 5px;
+    margin: 15px;
+} */ 
+
 .cart-background {
-    background-color: darkcyan;
-    padding: 30px;
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 20px;
     border-radius: 5px;
 }
 
+.cart-background h3 {
+    color: #1a70aa;
+    letter-spacing: 2px;
+    margin-left: 19%;
+    font-size: 150%;
+}
+
 .cart-container {
-    background-color: whitesmoke;
-    padding: 50px;
+
+}
+
+.cart-list {
+    background-color: white;
     border-radius: 5px;
-    margin: 15px;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+
+}
+
+.cart-list th {
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    color: #96a4ad;
+}
+
+.cart-list td:nth-child(5){
+    text-align: right;
+}
+
+.cart-list th:nth-child(2){
+    width: 200px;
+}
+
+.cart-total {
+    text-align: right;
+    padding-right: 50px;
+    font-size: 130%;
+    font-weight: 900;
+    color:#245d83;
+}
+
+.cart-footer {
+    margin-top: 3%;
+    margin-left: 19%;
 }
