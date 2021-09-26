@@ -32,6 +32,17 @@ button {
     display: block;
     margin-left: auto;
     font-size: 25px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: chocolate;
+}
+
+button:active {
+    background-color: coral;
+    border: 2px solid black;
 }
 
 a {

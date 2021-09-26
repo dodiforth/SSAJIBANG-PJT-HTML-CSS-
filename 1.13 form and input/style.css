@@ -1,9 +1,14 @@
 body {
     margin: 0px;
+    font-family: 'Koh Santepheap', cursive; 
 }
 
 div, input, textarea {
     box-sizing: border-box;
+}
+
+p,h4,h3,h2,h1,span {
+    transform: rotate(0.003deg);
 }
 
 .clear {
