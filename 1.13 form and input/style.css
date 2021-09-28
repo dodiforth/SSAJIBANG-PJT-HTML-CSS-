@@ -15,6 +15,27 @@ p,h4,h3,h2,h1,span {
     clear: both;
 }
 
+.nav-container {
+    display: flex;
+    height: 50px;
+    background-color: indianred;
+
+    align-items: center;
+}
+
+.nav-item {
+    flex-grow: 1;
+    color: ivory;
+    font-size: 20px ;
+    padding: 25px;
+    text-align: center;
+}
+
+.nav-item:nth-child(1) {
+    flex-grow: 3;
+    text-align: start;
+}
+
 .main-background {
     width: 100%;
     height: 500px;
