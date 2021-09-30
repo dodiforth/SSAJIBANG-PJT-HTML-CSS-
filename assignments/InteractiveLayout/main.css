@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+div {
+    background-color: honeydew;
+    display: flex;
+}
