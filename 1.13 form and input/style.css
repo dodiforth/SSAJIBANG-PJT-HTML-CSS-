@@ -11,6 +11,18 @@ p,h4,h3,h2,h1,span {
     transform: rotate(0.003deg);
 }
 
+.test {
+    /* width: 50vw;
+    height: 100vh;
+    background-color: gray; */
+}
+/* width : vw -> 브라우저 폭에 비례 */
+/* height : vh -> 브라우저 높이에 비례 */
+/* rem -> 기본 폰트사이즈에 비례  */
+/* ex : width : 10 rem -> html 태그 폰트사이즈의 10배 */
+/* html 의 기본 폰트 픽셀은 16px 이다. */
+/* 따라서 20rem 은 대략적으로 320px */
+
 .clear {
     clear: both;
 }
@@ -133,4 +145,14 @@ p,h4,h3,h2,h1,span {
     background-color: rgb(238, 183, 163);
     border : none;
     border-radius: 10px;
+}
+
+@media screen and (max-width : 1200px){
+    .main-title {
+        font-size: 30px;
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
 }
