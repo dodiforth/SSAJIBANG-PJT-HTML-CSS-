@@ -1,8 +1,23 @@
+/* Global Styling Starts Here*/
 body {
     margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
 }
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+p,h4,h3,h2,h1,span {
+    transform: rotate(0.003deg);
+}
+/* Global Styling Ends Here */
