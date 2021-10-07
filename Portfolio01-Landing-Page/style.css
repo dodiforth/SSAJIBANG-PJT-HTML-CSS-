@@ -1,6 +1,8 @@
 /* Global Styling Starts Here*/
 body {
     margin: 0;
+    border-collapse: collapse;
+
 }
 
 h1, h2, h3, h4 {
@@ -8,7 +10,7 @@ h1, h2, h3, h4 {
     font-weight: 600;
 }
 
-p {
+p, button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
@@ -22,12 +24,13 @@ p,h4,h3,h2,h1,span {
 }
 /* Global Styling Ends Here */
 
+/* Main */
 .main-background {
     width: 100vw;
     height: 55vh;
     margin: 0;
     background: linear-gradient(70deg, rgb(57, 57, 255), pink);
-    
+
 }
 
 .main-background .main-right img{
@@ -51,13 +54,50 @@ p,h4,h3,h2,h1,span {
 }
 
 .main-title {
-    margin: 0;
+    margin: 0 30px 30px 0;
+    /* top right bottom left */
+    font-size: 50px;
+    color: white;
 }
 
 .main-text {
-
+    margin: 0 0 50px 0;
+    font-size: 18px;
+    color: white;
 }
 
-.main-btn {
+.btn {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 10%;
+    font-size: 16px;
+    display: inline-block;
+}
 
+/* Middle */
+.middle-ground {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    padding: 50px;
+}
+
+.middle-btn {
+    margin: 30px 0 50px 0;
+}
+
+.middle-ground h4 {
+    font-size: 20px;
+}
+
+/* Service */
+
+.service-container {
+    background-color: brown;
+    width: 70% ;
+    height: 400px;
+    margin: auto;
 }
