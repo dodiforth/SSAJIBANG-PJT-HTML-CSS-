@@ -82,7 +82,7 @@ p,h4,h3,h2,h1,span {
     /* THIS !!!!! FIXED THE BUG !!!! */
     height: fit-content;
     /* As set the height to fit-content, it finally literally contains all 3 elements */
-    
+
     text-align: center;
     padding: 3em;
 }
@@ -104,8 +104,37 @@ p,h4,h3,h2,h1,span {
 /* Service */
 
 .service-container {
-    background-color: brown;
-    width: 70% ;
+    background-color: rgb(78,97,192);
+    width: 100vw;
     height: 400px;
     margin: auto;
+}
+
+.service-container h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.service-container p {
+    font-size: 13px;
+    color: white;
+}
+
+.service-slogan {
+    padding: 3em;
+    text-align: center;
+}
+
+.service-item {
+    float: left;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+}
+
+.service-item i {
+    background-color: white;
+    padding: 0.3em;
+    border-radius: 50%;
+    color: rgb(78,97,192);
 }

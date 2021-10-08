@@ -104,6 +104,8 @@ p,h4,h3,h2,h1,span {
     margin: auto;    
 }
 
+/*  */
+
 .product-container {    
     max-width: 1000px;
     width: 80%;
@@ -127,6 +129,8 @@ p,h4,h3,h2,h1,span {
     float: left;
     width: 25%;
 }
+
+/*  */
 
 .shop-bg {
     background-color: #eee;
