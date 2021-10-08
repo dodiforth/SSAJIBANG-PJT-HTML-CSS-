@@ -179,10 +179,20 @@ p,h4,h3,h2,h1,span {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    /* border: 30px solid transparent; */
+
+    box-shadow: inset 0px 0px 0px 1px transparent;
+    transition: all 0.5s;
+}
+
+.stationary:hover {
+
+    box-shadow: inset 0px 0px 0px 30px white;
 }
 
 .station-text {
-    width: 100%;
+    width: 70%;
     height: fit-content;
     margin-top: 50px;
     margin-left: 30px;
@@ -204,3 +214,4 @@ p,h4,h3,h2,h1,span {
 .image-4 {
     background-image: url(/Portfolio01-Landing-Page/img/portfolio-4.jpg);
 }
+
