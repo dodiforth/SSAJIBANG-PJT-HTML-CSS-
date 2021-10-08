@@ -2,7 +2,6 @@
 body {
     margin: 0;
     border-collapse: collapse;
-
 }
 
 h1, h2, h3, h4 {
@@ -22,15 +21,16 @@ div, input, textarea {
 p,h4,h3,h2,h1,span {
     transform: rotate(0.003deg);
 }
+
 /* Global Styling Ends Here */
 
 /* Main */
 .main-background {
     width: 100vw;
-    height: 55vh;
+    height: 600px;
     margin: 0;
     background: linear-gradient(70deg, rgb(57, 57, 255), pink);
-
+    /* padding: 10px; */
 }
 
 .main-background .main-right img{
@@ -43,14 +43,14 @@ p,h4,h3,h2,h1,span {
     float: left;
     width: 60%;
     height: 100%;
-
+    
     padding: 50px;
 }
 
 .main-right {
     float: right;
-    width: 40%;
-    height: 100%;
+    width: 30%;
+    height: 600px;
 }
 
 .main-title {
@@ -71,26 +71,34 @@ p,h4,h3,h2,h1,span {
     color: white;
     border: none;
     padding: 20px;
-    border-radius: 10%;
+    border-radius: 5%;
     font-size: 16px;
-    display: inline-block;
 }
 
 /* Middle */
 .middle-ground {
     width: 100%;
-    height: 150px;
+
+    /* THIS !!!!! FIXED THE BUG !!!! */
+    height: fit-content;
+    /* As set the height to fit-content, it finally literally contains all 3 elements */
+    
     text-align: center;
-    margin: 10px;
-    padding: 50px;
+    padding: 3em;
 }
 
 .middle-btn {
     margin: 30px 0 50px 0;
+    
 }
 
 .middle-ground h4 {
     font-size: 20px;
+    margin: 0;
+}
+
+.middle-ground p {
+    display: inline-block;
 }
 
 /* Service */
