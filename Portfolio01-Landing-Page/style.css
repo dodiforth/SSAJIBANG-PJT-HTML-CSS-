@@ -149,7 +149,7 @@ p,h4,h3,h2,h1,span {
 
 .portfolio-container {
     width: 100%;
-    height: fit-content;
+    height: 800px;
 }
 
 .portfolio-slogan {
@@ -176,11 +176,31 @@ p,h4,h3,h2,h1,span {
     float: left;
     width: 50%;
     height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.stationary img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0;
+.station-text {
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    margin-left: 30px;
+    color: white
+}
 
+.image-1 {
+    background-image: url(/Portfolio01-Landing-Page/img/portfolio-1.jpg);
+}
+
+.image-2 {
+    background-image: url(/Portfolio01-Landing-Page/img/portfolio-2.jpg);
+}
+
+.image-3 {
+    background-image: url(/Portfolio01-Landing-Page/img/portfolio-3.jpg);
+}
+
+.image-4 {
+    background-image: url(/Portfolio01-Landing-Page/img/portfolio-4.jpg);
 }
