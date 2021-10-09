@@ -255,3 +255,42 @@ p,h4,h3,h2,h1,span {
     color: black;
 }
 
+/* Tablet 사이즈 */
+@media screen and (max-width: 1200px) {
+
+   
+}
+
+/* Mobile 사이즈 */
+@media screen and (max-width: 850px) {
+
+    .main-left {
+        display: inline-block;
+        width: 100%;
+        height: 300px;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .main-right {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .main-background {
+        height: 800px;
+        background: linear-gradient(70deg, rgb(57, 57, 255), pink);
+    }
+
+    .main-background .main-right img{
+        /* float: right; */
+        /* display: block; */
+        height: 80%;
+        width: 40%;
+        margin-top: 100px;
+    }
+
+}
