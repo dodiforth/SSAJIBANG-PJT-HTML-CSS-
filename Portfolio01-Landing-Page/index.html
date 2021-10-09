@@ -141,3 +141,204 @@
 </body>
 </html>
 
+<!--  As below, the instructor's version   -->
+<!-- 
+    1. 사이트 대문 레이아웃 만들기 
+
+<div class="main-background">
+    <div class="main-container">
+      <div class="main-text">
+        <h1>Landing Page for Apps</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <button class="btn btn-black">Show More</button>
+      </div>
+      <img src="iphone.png" class="main-iphone">
+    </div>
+</div>
+
+ -->
+
+ <!-- 
+
+    2. 검은색 버튼 디자인
+
+    버튼 스타일 막 짜지마시고 나중에 재활용하고 싶으면
+
+뼈대와 살점을 분리해놓으면 좋다고 했던 기억이 납니다.
+
+
+<button class="btn btn-black">Show More</button>
+
+버튼의 뼈대와 버튼 색을 지정해주는 class를 두개 만든 것이지요. 확장성을 잡은 훌륭한 CSS 디자인 입니다.
+
+btn에는 버튼의 뼈대, btn-black에는 버튼의 색과 :hover, :active시 지정할 색을 넣어주면 되겠네요. 
+
+
+  -->
+
+<!-- 
+    3. 대문 반응형 디자인
+
+    그냥 media query 쓰면 되는건 맞는데
+
+대충 막 짜지 말고 모바일에선 어떤 스타일들이 달라지는지 미리 기록해보십시오. 
+
+ 
+
+- 글자 가운데 정렬
+- 글자와 이미지를 세로로 배치
+- 이미지가 약간 작아지기 
+- 이미지 가운데 정렬
+
+ 
+
+이런 식으로 미리 정리해둔 다음에 
+
+media query로 집어넣으면 훨씬 버그가 덜합니다. 
+
+->CSS
+
+ -->
+
+ <!-- 
+    4. 동그라미 4개 레이아웃
+
+    HTML부터 쭉 짰다고 합니다. 
+
+    <div class="service">
+    <div class="main-container">
+      <h4 style="margin-top: 0;">What We Offer</h4>
+
+      <div class="service-items">
+        <div>
+          <i class="fa fa-mobile fa-4x service-icon"></i>
+          <h5>Responsive</h5>
+        </div>
+        <div>
+          <i class="fa fa-flask fa-3x service-icon"></i>
+          <h5>Experiments</h5>
+        </div>
+        <div>
+          <i class="fa fa-flash fa-3x service-icon"></i>
+          <h5>Quickness</h5>
+        </div>
+        <div>
+          <i class="fa fa-globe fa-3x service-icon"></i>
+          <h5>Global Shipping</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  -->
+
+  <!-- 
+      5. 동그라미 4개 레이아웃 반응형은 
+      __ CSS참조 
+   -->
+
+<!-- 
+        6.포트폴리오 섹션 레이아웃 만들기
+
+편의상 포트폴리오 섹션이라고 부르겠습니다.
+
+일단 레이아웃부터 디자인합시다.
+
+<div class="portfolio">
+  <h4>What we can DO</h4>
+  <div class="portfolio-container">
+    <div class="portfolio-item1">
+      <div class="portfolio-text">
+      <h4>Stationary</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div>두번째박스 생략</div>
+    <div>세번째박스 생략</div>
+    <div>네번째박스 생략</div>
+  </div>
+</div>
+
+-->
+
+
+<!-- 
+    7. 포트폴리오 섹션 애니메이션 넣는 법
+
+
+    시작과 끝밖에 없는 one-way 애니메이션 구현 방법은 그냥
+
+시작스타일과 최종스타일을 만든 뒤에 transition 속성만 부여하면 되는 것입니다.
+
+흰 테두리는 아마도 border 속성인거같죠?
+
+그래서 시작/최종스타일로 border를 두껍게 .portfolio-item1에 줘봤습니다. 
+
+!!!!!!!!!!!!!!
+explain7-600x217.png!!
+!!!!!!!!!!!!!!
+
+오른쪽에 줘봤는데 배경이 쪼그라들어서 우리가 목표로하는 최종화면과는 조금 다른 것 같습니다.
+
+배경을 쪼그라들지 않게 하고싶다면
+
+모든 요소 앞에 붕 떠서 존재하는 박스를 만들어서 여기에 border를 주는게 어떨까요? 
+
+
+!!!!!!!!!!!!!!
+explain8.png!!
+!!!!!!!!!!!!!!
+
+대략 이런 박스를 하나 추가하자는겁니다.
+
+그리고 border를 주면 애니메이션이 목표사진과 비슷해질듯요
+
+<div class="portfolio-item1">
+     <div class="white-box"></div>  
+      <div class="portfolio-text">
+      <h4>Stationary</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+</div>
+
+기존 코드에 HTML을 이렇게 추가하고
+
+.white-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index : 2;
+  border : 0px solid white;
+}
+
+.white-box:hover {
+  border : 30px solid white;
+}
+
+ CSS도 추가했습니다.
+
+나머지는 여러분들이 애니메이션을 완성해봅시다. 
+
+ 
+
+- 당연히 position : absolute를 썼으니 position : relative도 어딘가에 필요할겁니다. 어디에 필요할까요
+
+- 애니메이션은 여러분이 직접 한번 transition으로 넣어보시길 바랍니다.
+
+코드를 잘 짰다면
+
+그럼 아까랑 다르게 그림이 줄어들지 않은 채로 애니메이션이 동작하게 됩니다. 완성 
+
+ -->
+
+ <!-- 이제 나머지는 완성을 위해 다듬을 부분이 많겠죠? 
+
+-  footer 만들기
+- 글자 스타일링
+- 마진노가다
+
+등은 여러분 충분히 혼자 하실 수 있으니 여기까지 하겠습니다.
+
+의문점은 게시판으로  -->
