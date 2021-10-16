@@ -1,3 +1,12 @@
+a {
+    text-decoration: none;
+    color: #6fbaf8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .clear {
     clear: both;
 }
@@ -9,4 +18,11 @@
 
 .w-icon {
     color: #6fbaf8;
+    border-color: #6fbaf8;
+}
+
+.centering {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
